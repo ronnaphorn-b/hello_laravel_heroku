@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/inAfterPaidApi',function() {
+    return view('inAfterPaidApi');
+ });
+
+Route::post('/inAfterPaidApi',function() {
+    return view('inAfterPaidApi');
+ });
+
+Route::get('/inItemFoundApi',function() {
+    return view('inItemFoundApi');
+ });
+
+Route::post('/inItemFoundApi',function() {
+    return view('inItemFoundApi');
+ });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
