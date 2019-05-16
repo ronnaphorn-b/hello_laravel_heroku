@@ -1,10 +1,9 @@
 <?php
-    echo "Contacts <br>";
+    echo "Chats <br>";
     echo "--------------------------------<br>";
-    foreach($contacts as $contact){
-        echo "Name : $contact->name <br>";
-        echo "Phone : $contact->phone <br>";
-        echo "Address : $contact->address <br>";
+    foreach($chats as $chat){
+        echo "Display Name : $chat->line_display_name__c <br>";
+        echo "Line UID : $chat->line_uid__c <br>";
         echo "===============================<br>";
     }
 

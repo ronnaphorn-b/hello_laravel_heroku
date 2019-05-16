@@ -34,8 +34,10 @@ Route::post('/inItemFoundApi',function() {
  });
 
  Route::get('/testDisplayDB', function () {
-    $contacts = App\Contact::all();
-    return view('testDisplayDB', ['contacts' => $contacts]);
+    //$contacts = App\Contact::all();
+    //return view('testDisplayDB', ['contacts' => $contacts]);
+    $chats = DB::select('select line_display_name__c,line_uid__c from salesforce.chat__c');
+    return view('testDisplayDB',['chats'=>$chats]);
 });
 
 Auth::routes();
