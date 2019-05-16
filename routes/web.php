@@ -35,7 +35,7 @@ Route::post('/inItemFoundApi',function() {
 
  Route::get('/testDisplayDB', function () {
     $contacts = App\Contact::all();
-    return view('welcome', ['contacts' => $contacts]);
+    return view('testDisplayDB', ['contacts' => $contacts]);
 });
 
 Auth::routes();
