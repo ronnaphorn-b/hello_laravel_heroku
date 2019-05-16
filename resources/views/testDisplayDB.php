@@ -1,8 +1,11 @@
 <?php
+    echo "Contacts \n";
+    echo "--------------------------------";
     foreach($contacts as $contact){
-        echo $contact->name;
-        echo $contact->phone;
-        echo $contact->address;
+        echo "Name : $contact->name \n";
+        echo "Phone : $contact->phone \n";
+        echo "Address : $contact->address \n";
+        echo "===============================";
     }
-    
+
 ?>
