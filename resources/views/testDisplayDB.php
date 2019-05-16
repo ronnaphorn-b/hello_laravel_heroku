@@ -1,10 +1,10 @@
 <?php
-    echo "Contacts \n";
+    echo "Contacts <br>";
     echo "--------------------------------";
     foreach($contacts as $contact){
-        echo "Name : $contact->name \n";
-        echo "Phone : $contact->phone \n";
-        echo "Address : $contact->address \n";
+        echo "Name : $contact->name <br>";
+        echo "Phone : $contact->phone <br>";
+        echo "Address : $contact->address <br>";
         echo "===============================";
     }
 
