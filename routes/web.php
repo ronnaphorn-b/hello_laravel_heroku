@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//use App\Contact;
 Route::get('/', function () {
     return view('welcome');
     //$contacts = App\Contact::all();
