@@ -33,6 +33,11 @@ Route::post('/inItemFoundApi',function() {
     return view('inItemFoundApi');
  });
 
+ Route::get('/testDisplayDB', function () {
+    $contacts = App\Contact::all();
+    return view('welcome', ['contacts' => $contacts]);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
