@@ -36,7 +36,7 @@ Route::post('/inItemFoundApi',function() {
  Route::get('/testDisplayDB', function () {
     //$contacts = App\Contact::all();
     //return view('testDisplayDB', ['contacts' => $contacts]);
-    $chats = DB::select('select line_display_name__c,line_uid__c from salesforce.chat__c');
+    $chats = DB::select('select name,line_display_name__c,line_uid__c,external_test_id__c from salesforce.chat__c where line_display_name__c=?', ['FAH Nalinee']);
     return view('testDisplayDB',['chats'=>$chats]);
 });
 
