@@ -9,4 +9,9 @@
         echo "-------------------------------------------<br>";
     }
 
+    $testQuery_1 = DB::update('update salesforce.chat__c set external_test_id__c = ? where line_display_name__c = ?', ['8888123456712','Best']);
+    $testQuery_2 = DB::table('salesforce.chat__c')
+                        ->where('line_display_name__c', 'Test-Insert')
+                        ->update(['external_test_id__c' => '00000000002']);
+
 ?>
